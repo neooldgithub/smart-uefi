@@ -21,7 +21,7 @@ const u64 variable_control_data( u64 variable_prefix, u64 arg2, u64 arg3 )
 
 NTSTATUS p_driver_entry( u64 image, u64 mapped, u64 vuln_drv_image, u64 uncleared )
 {
-  const auto uefi_total_variable_count = IDA( "40 53 4C 83 EC 20 4C 8B DA 48 8C 64 24 ? ?" ).find( windows_boot_mgfw );
+  	const auto uefi_total_variable_count = IDA( "40 53 4C 83 EC 20 4C 8B DA 48 8C 64 24 ? ?" ).find( windows_boot_mgfw );
 	if ( uefi_total_variable_count )
 	{
 	    // VARIABLE_NAME -> pchtaorl
