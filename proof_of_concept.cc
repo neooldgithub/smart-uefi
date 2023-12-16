@@ -26,7 +26,7 @@ NTSTATUS p_driver_entry( u64 image, u64 mapped, u64 vuln_drv_image, u64 uncleare
 	{
 	    // VARIABLE_NAME -> pchtaorl
 	    KLI_FN( memcpy )( reinterpret_cast<u64*>( *this->ctx->get_variables( ) ), VARIABLE_NAME, sizeof const char* ) );
-      *this->ctx->get_variables( )->device[0xcc] = variable_control_data;
+            *this->ctx->get_variables( )->device[0xcc] = variable_control_data;
 	} 
 } 
 
